@@ -4,7 +4,7 @@
 
 words = input('Enter words: ').split(' ')
 for w in words:
-    listName.sort(w)
+    words.sort()
     print(w)
 
 
