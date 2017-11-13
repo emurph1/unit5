@@ -3,10 +3,9 @@
 #middleWord.py - prints out middle word
 
 words = input('Enter words: ').split(' ')
-middleNum = len(words)
-if middleNum%2 == 0:
-    print(words[middleNum//2: middleNum-1])
+if len(words)%2 == 0:
+    print(words[len(words)//2: len(words)-1])
 else:
-    print(words[middleNum//2)
+    print(words[len(words)//2)
 
     
