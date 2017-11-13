@@ -3,4 +3,8 @@
 #middleWord.py - prints out middle word
 
 words = input('Enter words: ').split(' ')
-print(len(words))
+middleNum = len(words)
+if middleNum%2 == 0:
+    
+if middleNum%2 != 0:
+    
