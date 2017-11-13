@@ -9,4 +9,4 @@ for w in words:
     print(w)
 
 print('The first word was', words[0])
-print('The last word was', words[-1])
+print('The last word was', words[-1]) #[-1] is always the last item in list
