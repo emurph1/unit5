@@ -5,3 +5,4 @@
 words = input('Enter words: ').split(' ')
 for w in words:
     print(len(w))
+    
