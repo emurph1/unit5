@@ -7,4 +7,5 @@ longest = 0
 for w in words:
     if len(w) > longest:
         longest = len(w)
-        print(longest)
+print(longest)
+
