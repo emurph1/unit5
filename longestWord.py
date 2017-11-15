@@ -8,6 +8,5 @@ word = ' '
 for w in words:
     if len(w) > longest:
         longest = len(w)
-    for w in words:
         word = words[longest]
 print(word)
