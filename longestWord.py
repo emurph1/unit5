@@ -3,4 +3,5 @@
 #longestWord.py - find longest word in set of words
 
 words = input('Enter words: ').split(' ')
-print(max(words))
+for i in range(words):
+    print(len(words))
