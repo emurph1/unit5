@@ -9,6 +9,6 @@ for w in words:
         longest = len(w)
 print(longest)
 word = ' '
-for w in words
+for w in words:
     word = words[longest]
 print(word)
