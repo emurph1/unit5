@@ -4,11 +4,10 @@
 
 words = input('Enter words: ').split(' ')
 longest = 0
+word = ' '
 for w in words:
     if len(w) > longest:
         longest = len(w)
-print(longest)
-word = ' '
-for w in words:
-    word = words[longest]
+    for w in words:
+        word = words[longest]
 print(word)
