@@ -15,4 +15,4 @@ printBoard()
 row = int(input('Enter row number: '))
 col = int(input('Enter column number: '))
 
-board[row][col] = 'x'
+board[row-1][col-1] = 'x'
