@@ -3,6 +3,6 @@
 #warmUp14.py - ask user name and print initials
 
 name = input('Enter name: ').split(' ')
-print(name[0][0])
+print('Your initials are ',name[0][0], name[1][0])
 
 
