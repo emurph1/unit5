@@ -1,4 +1,6 @@
-
+#Emily Murphy
+#2017-11-17
+#betterColoredWindow.py -
 from random import randint
 from ggame import *
 
@@ -15,16 +17,11 @@ greenRectangle = RectangleAsset(1500, 900, whiteOutine, green)
 blackRectangle = RectangleAsset(1500, 900, whiteOutine, black)
 redRectangle = RectangleAsset(1500, 900, whiteOutine, red)
 
+windows = [blueRectangle,greenRectangle,blackRectangle,redRectangle]
+
 def mouseClick(Event):
     num = randint(1,4)
-    if num == 1:
-        Sprite(blueRectangle)
-    elif num == 2:
-        Sprite(greenRectangle)
-    elif num == 3:
-        Sprite(blackRectangle)
-    elif num == 4:
-        Sprite(redRectangle)
+    print(windows[num])
 
 App().listenMouseEvent('click',mouseClick)
 App().run()
