@@ -13,6 +13,6 @@ def printBoard():
 printBoard()
 
 row = int(input('Enter row number: '))
-col = int(input('Enter column number: ')
+col = int(input('Enter column number: '))
 
 board[row][col] = 'x'
