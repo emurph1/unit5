@@ -5,6 +5,7 @@
 from datetime import date
 from calendar import weekday
 
-today = date.today().day, date.today().month, date.today().year
-todayNum = today.weekday
-print(today)
+months = ['January','February','March', 'April', 'May','June','July','August','September','October','November','December']
+days - ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+
+print('Today is', days[date.today().day],',', months[date.today().month],',',date.today().day,',',date.today().year)
