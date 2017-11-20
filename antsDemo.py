@@ -4,8 +4,8 @@
 from random import randint
 from ggame import *
 
-WIDTH = 800
-HEIGHT = 400
+WIDTH = 900
+HEIGHT = 600
 
 def step():
     for ant in data['antList']:
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     data = {}
     data['antList'] = []
 
-    for i in range(10):
+    for i in range(100):
         data['antList'].append(Sprite(ant,(randint(1,WIDTH), randint(1,HEIGHT))))
     
     App().run(step)
