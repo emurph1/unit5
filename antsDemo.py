@@ -4,7 +4,7 @@
 
 from ggame import *
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     red = Color(0xFF0000,1)
     ant = CircleAsset(10,LineStyle(1,red),red)
     
