@@ -35,11 +35,17 @@ def mySort(A):
     swapped = True
     while swapped:
         swapped = False
-        for i in range(0, len(A)-1):
+        for i in range(0, len(A)-1): #-1 to do the ending number
             if A[i] > A[i+1]:
                 A[i], A[i+1] = A[i+1], A[i] #swapping in Python
                 swapped = True
-        
+        if not swapped:
+            break
+        swapped = False
+        for i in range(len(A)-2, -1,-1):
+            if A[i] > A[i+1]:
+                A[i], A[i+1] = A[i+1], A[i] #swapping in Python
+                swapped = True
     return A
 
 if __name__ == '__main__':
