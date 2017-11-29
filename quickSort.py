@@ -2,27 +2,21 @@
 #2017-11-27
 #quickSort.py -
 
-"""algorithm quicksort(A, lo, hi) is
-    if lo < hi then
-        p := partition(A, lo, hi)
-        quicksort(A, lo, p - 1 )
-        quicksort(A, p + 1, hi)
+#Sam Smedinghoff
+#11/15/17
+#sorting.py - code to test a sorting function
 
-algorithm partition(A, lo, hi) is
-    pivot := A[hi]
-    i := lo - 1    
-    for j := lo to hi - 1 do
-        if A[j] < pivot then
-            i := i + 1
-            swap A[i] with A[j]
-    if A[hi] < A[i + 1] then
-        swap A[i + 1] with"""
-        
-def quickSort(A, lo, hi):
+from random import randint
+from time import time
+
+N = 100 #how many numbers will be sorted
+
+def mySort(A, lo, hi):
     if lo <hi:
         p = partition(A,lo,hi)
         quicksort(A,lo,p-1)
         quicksort(A,p+1,hi)
+    return L
         
 def partition(A, lo, hi):
     pivot = A[hi]
@@ -32,3 +26,25 @@ def partition(A, lo, hi):
             A[j], pivot = pivot, A[j]
     if A[hi] < A[i+1]:
         A[hi], A[i+1] = '', A[hi]
+    return L
+
+if __name__ == '__main__':
+    
+    #make a list of N random numbers between 1 and N
+    numbers = [0]*N
+    for i in range(N):
+        numbers[i] = randint(1,N)
+        
+    pythonSort = sorted(numbers) #Python's sort
+    
+    #time how long your sort takes
+    t1 = time()
+    numbers = mySort(numbers, 0, len(numbers)-1)
+    t2 = time()
+       
+    #print whether the sort worked or not
+    try:
+        assert(numbers == pythonSort)
+        print('Your sort took', t2-t1, 'seconds')
+    except:
+        print('Your sort did not work')
