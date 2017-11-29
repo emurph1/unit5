@@ -20,7 +20,9 @@ algorithm partition(A, lo, hi) is
         
 def quickSort(A, lo, hi):
     if lo <hi:
-        p = 
+        p = partition(A,lo,hi)
+        quicksort(A,lo,p-1)
+        quicksort(A,p+1,hi)
         
 def partition(A, lo, hi):
     pivot = A[hi]
