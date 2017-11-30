@@ -17,4 +17,4 @@ weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 
 monthToday = months[month-1]
 weekDay = weekDays[week]
 
-print('Today is '+weekDay+', '+monthToday+' '+str(day)+' '+str(year))
+print('Today is '+weekDay+', '+ monthToday +' '+str(day)+' '+str(year))
