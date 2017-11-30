@@ -1,11 +1,20 @@
 #Emily Murphy
-#2017-11-20
+#2017-11-30
 #displayDate.py - displays date
 
 from datetime import date
-from calendar import weekday
+
+today = date.today()
+day = today.day
+month = today.month
+year = today.year
+week = today.weekday()
 
 months = ['January','February','March', 'April', 'May','June','July','August','September','October','November','December']
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 
-print('Today is', days[today.weekday()],',', months[date.today().month],',',date.today().day,',',date.today().year)
+
+monthToday = months[month-1]
+weekDay = weekDays[week]
+
+print('Today is '+weekDay+', '+monthToday+' '+str(day)+' '+str(year))
