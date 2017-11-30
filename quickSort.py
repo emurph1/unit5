@@ -26,20 +26,20 @@ from time import time
 N = 100 #how many numbers will be sorted
 
 def mySort(A, lo, hi):
-    if lo <hi:
-        p = partition(A,lo,hi)
-        mySort(A,lo,p-1)
-        mySort(A,p+1,hi)
-    return A
-        
+    if lo < hi:
+        p = partition(A, lo, hi)
+        mySort(A, lo, p - 1)
+        mySort(A, p + 1, hi)
+
 def partition(A, lo, hi):
     pivot = A[hi]
     i = lo - 1
-    for j in range(lo,hi-1):
+    for j in range(lo, hi-1):
         if A[j] < pivot:
+            i += 1
             A[j], pivot = pivot, A[j]
     if A[hi] < A[i+1]:
-        A[hi], A[i+1] = '', A[hi]
+        A[hi], A[i+1] = A[i+1], A[hi]
     return i + 1
 
 if __name__ == '__main__':
