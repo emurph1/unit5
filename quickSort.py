@@ -36,10 +36,10 @@ def mySort(A, lo, hi):
 def partition(A, lo, hi):
     pivot = A[hi]
     i = lo - 1
-    for j in range(lo, hi-1):
+    for j in range(lo, hi):
         if A[j] < pivot:
             i += 1
-            A[j], pivot = pivot, A[j]
+            A[i], A[j] = A[j], A[i]
     if A[hi] < A[i+1]:
         A[hi], A[i+1] = A[i+1], A[hi]
     return i + 1
