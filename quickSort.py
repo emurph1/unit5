@@ -40,7 +40,7 @@ def partition(A, lo, hi):
             A[j], pivot = pivot, A[j]
     if A[hi] < A[i+1]:
         A[hi], A[i+1] = '', A[hi]
-    return A
+    return i + 1
 
 if __name__ == '__main__':
     
