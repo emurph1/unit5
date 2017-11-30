@@ -1,1 +1,26 @@
+#Emily Murphy
+#2017-11-27
+#heapSort.py -
 
+'''procedure heapify(a,count) is
+     (end is assigned the index of the first (left) child of the root)
+     end := 1
+     
+     while end < count
+         (sift up the node at index end to the proper place such that all nodes above
+          the end index are in heap order)
+         siftUp(a, 0, end)
+         end := end + 1
+     (after sifting up the last node all nodes are in heap order)
+ 
+ procedure siftUp(a, start, end) is
+     input:  start represents the limit of how far up the heap to sift.
+                   end is the node to sift up.
+     child := end 
+     while child > start
+         parent := iParent(child)
+         if a[parent] < a[child] then (out of max-heap order)
+             swap(a[parent], a[child])
+             child := parent (repeat to continue sifting up the parent now)
+         else
+             return'''
