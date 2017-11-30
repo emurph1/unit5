@@ -14,9 +14,9 @@ N = 100 #how many numbers will be sorted
 def mySort(A, lo, hi):
     if lo <hi:
         p = partition(A,lo,hi)
-        quicksort(A,lo,p-1)
-        quicksort(A,p+1,hi)
-    return L
+        mySort(A,lo,p-1)
+        mySort(A,p+1,hi)
+    return A
         
 def partition(A, lo, hi):
     pivot = A[hi]
@@ -26,7 +26,7 @@ def partition(A, lo, hi):
             A[j], pivot = pivot, A[j]
     if A[hi] < A[i+1]:
         A[hi], A[i+1] = '', A[hi]
-    return L
+    return A
 
 if __name__ == '__main__':
     
