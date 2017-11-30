@@ -34,4 +34,22 @@
      end loop
  end function """
  
- def combsort(A)
+ def mySort(A):
+     gap = N
+     shrink = 1.3
+     sort = False
+     while sort = False:
+         gap = floor(gap/shrink)
+        if gap > 1:
+            sort = False
+        else:
+            gap = 1
+            sort = True
+            
+        i = 0
+        while i + gap < N:
+            if [i] > [i+gap]:
+                [i], [i+gap] = [i+gap], [i]
+                sort = False
+            i += 1
+    
