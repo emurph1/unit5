@@ -1,10 +1,6 @@
 #Emily Murphy
 #2017-11-27
-#quickSort.py -
-
-#Sam Smedinghoff
-#11/15/17
-#sorting.py - code to test a sorting function
+#quickSort.py -quick sort algorithm
 
 from random import randint
 from time import time
