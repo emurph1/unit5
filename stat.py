@@ -18,3 +18,6 @@ for i in numbers:
     total += float(i)
     mean = total/len(numbers)
 print('Mean is ', mean)
+
+for j in numbers:
+    
