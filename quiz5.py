@@ -9,5 +9,5 @@ def rand5(num):
     nums.append()
     print(nums)
 
-rand5(randin(1,100))
+rand5(randint(1,100))
 
