@@ -6,8 +6,9 @@ from random import randint
 
 def rand5(num):
     nums = []
-    nums.append()
-    print(nums)
+    for i in range(num):
+        nums.append(i)
+    return nums
 
-rand5(randint(1,100))
+print(rand5(randint(1,100)))
 
